@@ -1,23 +1,24 @@
 {
-  "name": "final-project",
+  "name": "cs290final",
   "version": "1.0.0",
-  "description": "Final Project - Order Queue",
+  "description": "Final project for CS290",
   "main": "server.js",
+  "dependencies": {},
+  "devDependencies": {},
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "prestart": "npm run build",
     "start": "node server.js"
   },
   "repository": {
     "type": "git",
-    "url": "git+ssh://git@https://github.com/edwarda3/cs290Final"
+    "url": "git+https://github.com/edwarda3/cs290Final.git"
   },
   "author": "Alex Edwards, Jacob Dugan",
-  "license": "UNLICENSED",
+  "license": "ISC",
   "bugs": {
-    "url": "https://github.com/edwarda3/cs290Final"
+    "url": "https://github.com/edwarda3/cs290Final/issues"
   },
-  "homepage": "https://github.com/edwarda3/cs290Final",
+  "homepage": "https://github.com/edwarda3/cs290Final#readme",
   "dependencies": {
     "express": "^4.15.3",
     "express-handlebars": "^3.0.0",
