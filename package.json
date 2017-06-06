@@ -10,14 +10,14 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+ssh://git@github.com/OSU-CS290-Sp2017/master-assignment-5.git"
+    "url": "git+ssh://git@https://github.com/edwarda3/cs290Final"
   },
   "author": "Alex Edwards, Jacob Dugan",
   "license": "UNLICENSED",
   "bugs": {
-    "url": "https://github.com/OSU-CS290-Sp2017/master-assignment-5/issues"
+    "url": "https://github.com/edwarda3/cs290Final"
   },
-  "homepage": "https://github.com/OSU-CS290-Sp2017/master-assignment-5#readme",
+  "homepage": "https://github.com/edwarda3/cs290Final",
   "dependencies": {
     "express": "^4.15.3",
     "express-handlebars": "^3.0.0",
