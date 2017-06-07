@@ -16,5 +16,59 @@
 		"description": "Item 3's description",
 		"price": 10.99,
 		"photoURL": "https://static1.squarespace.com/static/5845afdc725e257e3790c488/t/5848a4ea1b631b791d1ef57e/1481155827976/IMG_4431.jpg"
+	},
+	"menuItem4": {
+		"name": "Item Name 4",
+		"description": "Item 4's description",
+		"price": 5.99,
+		"photoURL": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/da/Strawberry_ice_cream_cone_%285076899310%29.jpg/220px-Strawberry_ice_cream_cone_%285076899310%29.jpg"
+	},
+	"menuItem5": {
+		"name": "Item Name 5",
+		"description": "Item 5's description",
+		"price": 4.99,
+		"photoURL": "http://farm4.static.flickr.com/3469/3179392957_7c117a5acb.jpg"
+	},
+	"menuItem6": {
+		"name": "Item Name 6",
+		"description": "Item 6's description",
+		"price": 10.99,
+		"photoURL": "https://static1.squarespace.com/static/5845afdc725e257e3790c488/t/5848a4ea1b631b791d1ef57e/1481155827976/IMG_4431.jpg"
+	},
+	"menuItem7": {
+		"name": "Item Name 7",
+		"description": "Item 7's description",
+		"price": 5.99,
+		"photoURL": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/da/Strawberry_ice_cream_cone_%285076899310%29.jpg/220px-Strawberry_ice_cream_cone_%285076899310%29.jpg"
+	},
+	"menuItem8": {
+		"name": "Item Name 8",
+		"description": "Item 8's description",
+		"price": 4.99,
+		"photoURL": "http://farm4.static.flickr.com/3469/3179392957_7c117a5acb.jpg"
+	},
+	"menuItem9": {
+		"name": "Item Name 9",
+		"description": "Item 9's description",
+		"price": 10.99,
+		"photoURL": "https://static1.squarespace.com/static/5845afdc725e257e3790c488/t/5848a4ea1b631b791d1ef57e/1481155827976/IMG_4431.jpg"
+	},
+	"menuItem10": {
+		"name": "Item Name 10",
+		"description": "Item 10's description",
+		"price": 5.99,
+		"photoURL": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/da/Strawberry_ice_cream_cone_%285076899310%29.jpg/220px-Strawberry_ice_cream_cone_%285076899310%29.jpg"
+	},
+	"menuItem11": {
+		"name": "Item Name 11",
+		"description": "Item 11's description",
+		"price": 4.99,
+		"photoURL": "http://farm4.static.flickr.com/3469/3179392957_7c117a5acb.jpg"
+	},
+	"menuItem12": {
+		"name": "Item Name 12",
+		"description": "Item 12's description",
+		"price": 10.99,
+		"photoURL": "https://static1.squarespace.com/static/5845afdc725e257e3790c488/t/5848a4ea1b631b791d1ef57e/1481155827976/IMG_4431.jpg"
 	}
 }
