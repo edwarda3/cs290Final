@@ -41,6 +41,9 @@ a{
   color: #454545;
   padding: 10px 20px;
 }
+
+
+/* MENU PAGE */
 .menu-container{
 	padding: 30px;
 	width:90%;
@@ -88,6 +91,7 @@ a{
 .orderList{
 	background-color: #fff;
 	position:fixed;
+	display:flex;
 	height: 100px;
 	width:100%;
 	bottom: 0;
@@ -96,14 +100,48 @@ a{
 	transition: all .2s ease;
 }
 .placeOrder{
-	float:right;
+	position:inherit;
+	right:0;
 	background-color: #5727c6;
 	border:1px solid black;
 	border-radius: 3px;
-	font-size:24px;
+	font-size:20px;
 	width:100px;
 	height:100%;
 	cursor:pointer;
+}
+.orderItem{
+	margin:7px;
+	padding:5px;
+}
+.orderItem img{
+	height:86px;
+	float:left;
+}
+.orderItem span{
+	font-size:20px;
+	padding: 0 7px;
+}
+.orderItem span:last-child{
+	font-size:16px;
+	color:grey;
+	display:block;
+}
+
+
+/* QUEUE PAGE */
+.queueContainer{
+	justify-content:center;
+}
+.queueOrder{
+	display:flex;
+	flex-wrap:wrap;
+	width: 90%;
+	margin: 0 auto;
+	background-color:#eee;
+	box-shadow:1px 1px 1px black;
+	margin:10px;
+	padding: 5px;
 }
 
 

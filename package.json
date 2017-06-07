@@ -3,7 +3,12 @@
   "version": "1.0.0",
   "description": "Final project for CS290",
   "main": "server.js",
-  "dependencies": {},
+  "dependencies": {
+    "body-parser": "^1.17.2",
+    "express": "^4.15.3",
+    "express-handlebars": "^3.0.0",
+    "handlebars": "^4.0.10"
+  },
   "devDependencies": {},
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
@@ -18,10 +23,5 @@
   "bugs": {
     "url": "https://github.com/edwarda3/cs290Final/issues"
   },
-  "homepage": "https://github.com/edwarda3/cs290Final#readme",
-  "dependencies": {
-    "express": "^4.15.3",
-    "express-handlebars": "^3.0.0",
-    "handlebars": "^4.0.10"
-  }
+  "homepage": "https://github.com/edwarda3/cs290Final#readme"
 }
