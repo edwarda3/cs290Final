@@ -2,14 +2,20 @@ var path = require('path');
 var fs = require('fs');
 var express = require('express');
 var exphbs = require('express-handlebars');
+var bodyParser = require('body-parser');
 
 var menuData = require('./menuData');
-// var queueData = require('./queueData');
 var app = express();
 var port = process.env.PORT || 3000;
 
+if(!fs.existsSync('queueData.json')) fs.writeFileSync('queueData.json','[]');
+var queueData = require('./queueData');
+
 app.engine('handlebars', exphbs({defaultLayout: 'main'}));
 app.set('view engine', 'handlebars');
+app.use(bodyParser.json());
+
+var queue = queueData;
 
 app.get('/', function (req, res, next) {
 
@@ -19,6 +25,26 @@ app.get('/', function (req, res, next) {
   res.render('menuPage', templateArgs);
 
 });
+
+app.get('/queue', function(req,res,next){
+	var templateArgs = {
+		queue: queueData
+	}
+	res.render('queuePage', templateArgs);
+});
+
+app.post('/queue/placeOrder', function(req, res){
+	if(req.body.length!=0){
+		queue.push(req.body);
+		writeQToFile();
+		res.sendStatus(200);
+	} else res.status(400);
+});
+
+function writeQToFile(){
+	fs.writeFile('queueData.json', JSON.stringify(queue));
+}
+
 // app.get('/order', function (req, res, next) {
 
   // var templateArgs = {

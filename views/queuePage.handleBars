@@ -1,0 +1,13 @@
+{{> header}}
+<main class="queueContainer">
+	{{#each queue}}
+		<section class="queueOrder">
+		{{#each this}}
+			<section class="menuItem">
+				<p class="menuItemPrice">${{price}}</p>
+				<h2 class="menuItemName">{{name}}</h2>
+			</section>
+		{{/each}}
+		</section>
+	{{/each}}
+</main>
