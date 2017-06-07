@@ -3,6 +3,18 @@ var order = [];
 var totalOrderPrice = 0;
 var orderList = document.querySelector('.orderList');
 
+function showItemDesc(a) {
+  
+    console.log(a);
+
+    var itemDescBackdrop = a.target.nextSibling.nextSibling;
+    var createItemDesc = a.target.nextSibling.nextSibling.nextSibling.nextSibling;
+
+    // Show the modal and its backdrop.
+    itemDescBackdrop.classList.remove('hidden');
+    createItemDesc.classList.remove('hidden');
+
+}
 
 function closeItemDesc(a) {
 
