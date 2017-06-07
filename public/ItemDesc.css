@@ -1,0 +1,108 @@
+.hidden {
+  display: none;
+}
+
+.create-itemDesc-button {
+    float:right;
+	margin-top:23px;
+	font-size:20px;
+	text-decoration:bold;
+	background-color:#fff;
+	cursor:pointer;
+	border: none;
+	color: grey;
+}
+
+
+.create-itemDesc-button:focus {
+  outline: none;
+}
+
+.itemDesc-backdrop {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  z-index: 1000;
+  background-color: rgba(0, 0, 0, 0.85);
+}
+
+.create-itemDesc {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  z-index: 1010;
+  overflow: scroll;
+}
+
+.hidden {
+  display: none;
+}
+
+.itemDesc-dialog {
+  width: auto;
+  max-width: 600px;
+  min-width: 350px;
+  min-height: 300px;
+  margin: 40px auto;
+  background-color: #fff;
+  border-radius: 15px;
+}
+
+.itemDesc-header {
+  position: relative;
+  padding: 10px 20px;
+}
+
+.itemDesc-header h3 {
+  margin: 0;
+  font-size: 28px;
+}
+
+.itemDesc-close-button {
+  position: absolute;
+  right: 10px;
+  top: 5px;
+  font-size: 24px;
+  border: none;
+  background: none;
+  padding: 0;
+  cursor: pointer;
+}
+
+.itemDesc-body {
+  padding: 20px;
+}
+
+.modal-footer {
+  display: flex;
+  justify-content: flex-end;
+  padding: 10px 10px 20px 10px;
+}
+
+.itemDesc-footer button {
+  font-size: 20px;
+  background-color: #fff;
+  color: #333;
+  border: 1px solid #333;
+  border-radius: 5px;
+  padding: 10px;
+  margin-right: 20px;
+  cursor: pointer;
+}
+
+.itemDesc-footer .modal-cancel-button:hover {
+  background-color: #eee;
+}
+
+.itemDesc-footer .modal-accept-button {
+  background-color: #319df6;
+  color: #fff;
+}
+
+.itemDesc-footer .modal-accept-button:hover {
+  background-color: #087dde;
+}
