@@ -5,7 +5,7 @@ body {
 }
 
 header {
-  background-color: #75f4f0;
+  background-color: #5727c6;
   color: #fff;
   margin:0;
 }
@@ -16,7 +16,8 @@ a{
 	font-size: 30px;
 	margin:0;
 	padding:15px;
-	padding-left:20%;
+	padding-left:50px;
+	color: #fff;
 }
 .navbar {
   font-size: 24px;
@@ -40,13 +41,15 @@ a{
   color: #454545;
   padding: 10px 20px;
 }
-.menu-contaner{
-	padding: 10px 50px;
+.menu-container{
+	padding: 30px;
+	width:90%;
+	margin:0 auto;
 	display:flex;
 	flex-wrap:wrap;
 }
 .menuItem{
-	flex: 0 1 28%;
+	flex: 0 1 400px;
 	background-color:#fff;
 	box-shadow: 1px 0 0 grey;	
 	padding:7px;
@@ -68,11 +71,19 @@ a{
 	font-size:16px;
 	color:grey;
 }
-.menuuItemPrice{
+.menuItemPrice{
 	float:right;
 	margin:1px;
 	padding:0;
 	font-size:16px;
+}
+.addToOrder{
+	float:right;
+	margin-top:20px;
+	font-size:30px;
+	text-decoration:bold;
+	color:grey;
+	cursor:pointer;
 }
 
 
