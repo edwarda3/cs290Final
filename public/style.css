@@ -98,6 +98,7 @@ a{
 	transform: translate(0,100px);
 	box-shadow: 0 0 1px black;
 	transition: all .2s ease;
+	overflow:scroll;
 }
 .placeOrder{
 	position:inherit;
@@ -118,6 +119,11 @@ a{
 	height:86px;
 	float:left;
 }
+.orderItem button{
+	border: none;
+	background-color: rgba(0,0,0,0);
+	float:right;
+}
 .orderItem span{
 	font-size:20px;
 	padding: 0 7px;
@@ -134,14 +140,29 @@ a{
 	justify-content:center;
 }
 .queueOrder{
-	display:flex;
-	flex-wrap:wrap;
 	width: 90%;
 	margin: 0 auto;
 	background-color:#eee;
-	box-shadow:1px 1px 1px black;
+	box-shadow:1px 0 0 black;
 	margin:10px;
-	padding: 5px;
+	padding: 10px 20px;
+}
+.queueOrder *{
+	display:inline-block;
+}
+.queueItem{
+	background-color:#fff;
+	box-shadow: 1px 1px 1px grey;	
+	padding:7px;
+	margin:5px;
+	width:auto;
+}
+.closeButton{
+	color:grey;
+	text-decoration: bold;
+	float:right;
+	font-size:25px;
+	cursor:pointer;
 }
 
 

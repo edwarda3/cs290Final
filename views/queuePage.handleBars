@@ -2,12 +2,15 @@
 <main class="queueContainer">
 	{{#each queue}}
 		<section class="queueOrder">
-		{{#each this}}
-			<section class="menuItem">
-				<p class="menuItemPrice">${{price}}</p>
+		<h3>Order #{{number}}</h3>
+		{{#each orderContent}}
+			<section class="queueItem">
 				<h2 class="menuItemName">{{name}}</h2>
 			</section>
 		{{/each}}
+		<span class="closeButton">X</span>
 		</section>
 	{{/each}}
 </main>
+
+<script src="/queue.js"></script>

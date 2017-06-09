@@ -16,6 +16,7 @@ app.set('view engine', 'handlebars');
 app.use(bodyParser.json());
 
 var queue = queueData;
+var queueNumber = 0;
 
 app.get('/', function (req, res, next) {
 
@@ -35,38 +36,37 @@ app.get('/queue', function(req,res,next){
 
 app.post('/queue/placeOrder', function(req, res){
 	if(req.body.length!=0){
-		queue.push(req.body);
+		queueNumber++;
+		var order = {
+			number: queueNumber,
+			orderContent: req.body
+		}
+		queue.push(order);
 		writeQToFile();
-		res.sendStatus(200);
-	} else res.status(400);
+		res.status(200).send();
+	} else res.status(400).send();
+});
+app.post('/queue/clearOrder', function(req, res){
+	if(req.body.number){
+		for(var i=0; i<queue.length; i++){
+			if(queue[i].number == req.body.number)
+				queue.splice(i,1);
+		}
+		res.status(200).send();
+	} else {
+		res.status(400).send();
+	}
 });
 
 function writeQToFile(){
 	fs.writeFile('queueData.json', JSON.stringify(queue));
 }
-
-// app.get('/order', function (req, res, next) {
-
-  // var templateArgs = {
-    // twits: twitData,
-  // }
-  // res.render('twitPage', templateArgs);
-
-// });
-
-// app.get('/order/:menuItem', function (req, res, next) {
-  // var index = req.params.twitNum;
-  // var twits = twitData[index];
-  // if (twits) {
-    // var templateArgs = {
-      // twits: { twit: twitData[index]}
-    // }
-	// console.log("text:",twits.text,"| author:",twits.author);
-    // res.render('twitPage', templateArgs);
-  // } else {
-    // next();
-  // }
-// });
+function getQueueNum(){
+	if(queue.length>0){
+		queueNumber = queue[queue.length-1].number;
+	}
+	console.log("Starting Queue at", queueNumber);
+}
 
 app.use(express.static(path.join(__dirname, 'public')));
 
@@ -77,4 +77,5 @@ app.get('*', function (req, res) {
 // Start the server listening on the specified port.
 app.listen(port, function () {
   console.log("== Server listening on port", port);
+  getQueueNum();
 });

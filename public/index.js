@@ -61,9 +61,9 @@ window.addEventListener('DOMContentLoaded', function () {
     itemDescAcceptButton.forEach(function (button) {
         button.addEventListener('click', addItemDesc);
     });
-    document.querySelector('.placeOrder').addEventListener('click', function(event){
-      placeOrder();
-    });
+    var placeOrderButton = document.querySelector('.placeOrder');
+	placeOrderButton.addEventListener('click', placeOrder );
+	
     var addButtons = document.querySelectorAll('.addToOrder');
     addButtons.forEach(function(button){
       button.addEventListener('click', function(event){
@@ -93,14 +93,21 @@ function addToOrder(item){
 	newItemName.textContent = item.name;
 	var newItemPrice = document.createElement('span');
 	newItemPrice.textContent = item.price;
-	newItem.appendChild(newItemImg); newItem.appendChild(newItemName); newItem.appendChild(newItemPrice);
-	console.log(newItem);
+	var closeButton = document.createElement('button');
+	closeButton.textContent = "x";
+	closeButton.addEventListener('click',removeFromOrder);
+	newItem.appendChild(newItemImg); newItem.appendChild(closeButton); newItem.appendChild(newItemName); newItem.appendChild(newItemPrice); 
 	orderList.appendChild(newItem);
 	
-	updatePlaceOrderButton(item);
+	updatePlaceOrderButton(item.price, 1);
 }
-function updatePlaceOrderButton(item){
-	totalOrderPrice+=item.price;
+function removeFromOrder(event){
+	order.splice(order.indexOf(event.target.parentNode),1);
+	updatePlaceOrderButton(event.target.parentNode.childNodes[3].textContent,-1);
+	event.target.parentNode.remove();
+}
+function updatePlaceOrderButton(price, sign){
+	totalOrderPrice+=(sign*price);
 	var placeOrderButton = document.querySelector('.placeOrder');
 	if(placeOrderButton.textContent==0) placeOrderButton.textContent= "Place Order";
 	else placeOrderButton.textContent = "Place Order ($" + totalOrderPrice + ")";
