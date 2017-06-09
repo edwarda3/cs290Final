@@ -52,6 +52,7 @@ app.post('/queue/clearOrder', function(req, res){
 			if(queue[i].number == req.body.number)
 				queue.splice(i,1);
 		}
+		writeQToFile();
 		res.status(200).send();
 	} else {
 		res.status(400).send();
