@@ -4,15 +4,17 @@
     <div class="itemDesc-dialog">
 
         <div class="itemDesc-header">
-            <h3>*change* insert item name from file</h3>
+            <h3>{{name}}</h3>
             <button type="button" class="itemDesc-close-button">&times;</button>
         </div>
 
         <div class="itemDesc-body">
-            
+            <img src="{{photoURL}}">
+            <p class="menuItemExtendedDescription">{{extendedDescription}}</p>
         </div>
 
         <div class="itemDesc-footer">
+            <p class="menuItemPrice">${{price}}</p>
             <button type="button" class="itemDesc-cancel-button">Cancel</button>
             <button type="button" class="itemDesc-accept-button">Add item</button>
         </div>
