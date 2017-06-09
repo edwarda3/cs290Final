@@ -57,7 +57,7 @@ window.addEventListener('DOMContentLoaded', function () {
 
 
     var createItemDesc = document.querySelectorAll('.create-itemDesc-button');
-    for (i = 1; i < createItemDesc.length; i++) {
+    for (i = 0; i < createItemDesc.length-1; i++) {
         createItemDesc[i].addEventListener('click', showItemDesc)
     }
 
