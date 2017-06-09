@@ -3,39 +3,53 @@ var order = [];
 var totalOrderPrice = 0;
 var orderList = document.querySelector('.orderList');
 
+//next three functions are for the items added descriptions.
+//called when '...' is clicked. Reveals added description of an item
 function showItemDesc(a) {
-  
-    console.log(a);
 
+    //a.target is this and next 2 functions refers to the button being pressed
     var itemDescBackdrop = a.target.nextSibling.nextSibling;
     var createItemDesc = a.target.nextSibling.nextSibling.nextSibling.nextSibling;
 
-    // Show the modal and its backdrop.
+    // Show the ItemDesc and its backdrop.
     itemDescBackdrop.classList.remove('hidden');
     createItemDesc.classList.remove('hidden');
 
 }
 
+//called when 'close' or the x are clicked on the added item description. Closes the added description.
 function closeItemDesc(a) {
 
 
     var itemDescBackdrop = a.target.parentNode.parentNode.parentNode.previousSibling.previousSibling;
     var createItemDesc = a.target.parentNode.parentNode.parentNode;
 
-    // Hide the modal and its backdrop.
+    // Hide the ItemDesc and its backdrop.
     itemDescBackdrop.classList.add('hidden');
     createItemDesc.classList.add('hidden');
 
 
 }
 
+//called when 'add item' is clicked on the added item description. closes added description and adds item to the order.
 function addItemDesc(a) {
     var itemDescBackdrop = a.target.parentNode.parentNode.parentNode.previousSibling.previousSibling;
     var createItemDesc = a.target.parentNode.parentNode.parentNode;
 
-    // Hide the modal and its backdrop.
+    // Hide the ItemDesc and its backdrop.
     itemDescBackdrop.classList.add('hidden');
     createItemDesc.classList.add('hidden');
+
+    //menu item = <section class="menuItem"> line in menuItem.handlebars file
+    var menuItem = a.target.parentNode.parentNode.parentNode.parentNode;
+    //gets item data and adds to order
+    var item = {
+        name: menuItem.childNodes[5].textContent, //name
+        description: menuItem.childNodes[7].textContent, //description
+        price: parseFloat(menuItem.childNodes[3].textContent.substring(1)), //price
+        url: menuItem.childNodes[1].src //img
+    }
+    addToOrder(item);
 
 }
 
@@ -43,7 +57,7 @@ window.addEventListener('DOMContentLoaded', function () {
 
 
     var createItemDesc = document.querySelectorAll('.create-itemDesc-button');
-    for (i = 1; i < createItemDesc.length; i++) {
+    for (i = 0; i < createItemDesc.length-1; i++) {
         createItemDesc[i].addEventListener('click', showItemDesc)
     }
 

@@ -1,73 +1,85 @@
 {
 	"menuItem1": {
 		"name": "Item Name 1",
-		"description": "Item 1's description",
+    "description": "Item 1's description",
+    "extendedDescription": "Hey look at me it's the Item 1 description. Reel tastay good stuf!",
 		"price": 5.99,
 		"photoURL": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/da/Strawberry_ice_cream_cone_%285076899310%29.jpg/220px-Strawberry_ice_cream_cone_%285076899310%29.jpg"
 	},
 	"menuItem2": {
 		"name": "Item Name 2",
-		"description": "Item 2's description",
+    "description": "Item 2's description",
+    "extendedDescription": "Hey look at me it's the Item 2 description. Reel tastay good stuf!",
 		"price": 4.99,
 		"photoURL": "http://farm4.static.flickr.com/3469/3179392957_7c117a5acb.jpg"
 	},
 	"menuItem3": {
 		"name": "Item Name 3",
-		"description": "Item 3's description",
+    "description": "Item 3's description",
+    "extendedDescription": "Hey look at me it's the Item 3 description. Reel tastay good stuf!",
 		"price": 10.99,
 		"photoURL": "https://static1.squarespace.com/static/5845afdc725e257e3790c488/t/5848a4ea1b631b791d1ef57e/1481155827976/IMG_4431.jpg"
 	},
 	"menuItem4": {
 		"name": "Item Name 4",
-		"description": "Item 4's description",
+    "description": "Item 4's description",
+    "extendedDescription": "Hey look at me it's the Item 4 description. Reel tastay good stuf!",
 		"price": 5.99,
 		"photoURL": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/da/Strawberry_ice_cream_cone_%285076899310%29.jpg/220px-Strawberry_ice_cream_cone_%285076899310%29.jpg"
 	},
 	"menuItem5": {
 		"name": "Item Name 5",
-		"description": "Item 5's description",
+    "description": "Item 5's description",
+    "extendedDescription": "Hey look at me it's the Item 5 description. Reel tastay good stuf!",
 		"price": 4.99,
 		"photoURL": "http://farm4.static.flickr.com/3469/3179392957_7c117a5acb.jpg"
 	},
 	"menuItem6": {
 		"name": "Item Name 6",
-		"description": "Item 6's description",
+    "description": "Item 6's description",
+    "extendedDescription": "Hey look at me it's the Item 6 description. Reel tastay good stuf!",
 		"price": 10.99,
 		"photoURL": "https://static1.squarespace.com/static/5845afdc725e257e3790c488/t/5848a4ea1b631b791d1ef57e/1481155827976/IMG_4431.jpg"
 	},
 	"menuItem7": {
 		"name": "Item Name 7",
-		"description": "Item 7's description",
+    "description": "Item 7's description",
+    "extendedDescription": "Hey look at me it's the Item 7 description. Reel tastay good stuf!",
 		"price": 5.99,
 		"photoURL": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/da/Strawberry_ice_cream_cone_%285076899310%29.jpg/220px-Strawberry_ice_cream_cone_%285076899310%29.jpg"
 	},
 	"menuItem8": {
 		"name": "Item Name 8",
-		"description": "Item 8's description",
+    "description": "Item 8's description",
+    "extendedDescription": "Hey look at me it's the Item 8 description. Reel tastay good stuf!",
 		"price": 4.99,
 		"photoURL": "http://farm4.static.flickr.com/3469/3179392957_7c117a5acb.jpg"
 	},
 	"menuItem9": {
 		"name": "Item Name 9",
-		"description": "Item 9's description",
+    "description": "Item 9's description",
+    "extendedDescription": "Hey look at me it's the Item 9 description. Reel tastay good stuf!",
 		"price": 10.99,
 		"photoURL": "https://static1.squarespace.com/static/5845afdc725e257e3790c488/t/5848a4ea1b631b791d1ef57e/1481155827976/IMG_4431.jpg"
 	},
 	"menuItem10": {
 		"name": "Item Name 10",
-		"description": "Item 10's description",
+    "description": "Item 10's description",
+    "extendedDescription": "Hey look at me it's the Item 10 description. Reel tastay good stuf!",
 		"price": 5.99,
 		"photoURL": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/da/Strawberry_ice_cream_cone_%285076899310%29.jpg/220px-Strawberry_ice_cream_cone_%285076899310%29.jpg"
 	},
 	"menuItem11": {
 		"name": "Item Name 11",
-		"description": "Item 11's description",
+    "description": "Item 11's description",
+    "extendedDescription": "Hey look at me it's the Item 11 description. Reel tastay good stuf!",
 		"price": 4.99,
 		"photoURL": "http://farm4.static.flickr.com/3469/3179392957_7c117a5acb.jpg"
 	},
 	"menuItem12": {
 		"name": "Item Name 12",
-		"description": "Item 12's description",
+    "description": "Item 12's description",
+    "extendedDescription": "Hey look at me it's the Item 12 description. Reel tastay good stuf!",
 		"price": 10.99,
 		"photoURL": "https://static1.squarespace.com/static/5845afdc725e257e3790c488/t/5848a4ea1b631b791d1ef57e/1481155827976/IMG_4431.jpg"
 	}
